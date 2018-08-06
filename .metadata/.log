@@ -1,0 +1,120 @@
+!SESSION 2018-08-06 16:08:33.772 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data D:\test\java-parking -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.vectrace.MercurialEclipse 4 0 2018-08-06 16:08:41.744
+!MESSAGE checking encoding (cp1252)...
+checking Python executable (C:\PROGRAM FILES\TORTOISEHG\hg.exe)
+checking Python version (2.7.10)
+checking Python lib (C:\PROGRAM FILES\TORTOISEHG\lib\library.zip)...
+checking Python security support (sni,tls1.0,tls1.1,tls1.2)
+checking Mercurial version (4.0)
+checking Mercurial custom build ()
+checking module policy (c)
+checking installed modules (C:\PROGRAM FILES\TORTOISEHG\lib\library.zip\mercurial)...
+checking templates (C:\PROGRAM FILES\TORTOISEHG\templates)...
+checking default template (C:\PROGRAM FILES\TORTOISEHG\templates\map-cmdline.default)
+checking commit editor... (notepad)
+checking username...
+ no username supplied
+ (specify a username in your configuration file)
+1 problems detected, please check your install!. Command line: hg -y debuginstall, error code: 1
+!STACK 1
+checking encoding (cp1252)...
+checking Python executable (C:\PROGRAM FILES\TORTOISEHG\hg.exe)
+checking Python version (2.7.10)
+checking Python lib (C:\PROGRAM FILES\TORTOISEHG\lib\library.zip)...
+checking Python security support (sni,tls1.0,tls1.1,tls1.2)
+checking Mercurial version (4.0)
+checking Mercurial custom build ()
+checking module policy (c)
+checking installed modules (C:\PROGRAM FILES\TORTOISEHG\lib\library.zip\mercurial)...
+checking templates (C:\PROGRAM FILES\TORTOISEHG\templates)...
+checking default template (C:\PROGRAM FILES\TORTOISEHG\templates\map-cmdline.default)
+checking commit editor... (notepad)
+checking username...
+ no username supplied
+ (specify a username in your configuration file)
+1 problems detected, please check your install!. Command line: hg -y debuginstall, error code: 1
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgDebugInstallClient.debugInstall(HgDebugInstallClient.java:30)
+	at com.vectrace.MercurialEclipse.MercurialEclipsePlugin.checkHgInstallation(MercurialEclipsePlugin.java:217)
+	at com.vectrace.MercurialEclipse.MercurialEclipsePlugin$1.run(MercurialEclipsePlugin.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 1 2018-08-06 16:08:41.745
+!MESSAGE checking encoding (cp1252)...
+checking Python executable (C:\PROGRAM FILES\TORTOISEHG\hg.exe)
+checking Python version (2.7.10)
+checking Python lib (C:\PROGRAM FILES\TORTOISEHG\lib\library.zip)...
+checking Python security support (sni,tls1.0,tls1.1,tls1.2)
+checking Mercurial version (4.0)
+checking Mercurial custom build ()
+checking module policy (c)
+checking installed modules (C:\PROGRAM FILES\TORTOISEHG\lib\library.zip\mercurial)...
+checking templates (C:\PROGRAM FILES\TORTOISEHG\templates)...
+checking default template (C:\PROGRAM FILES\TORTOISEHG\templates\map-cmdline.default)
+checking commit editor... (notepad)
+checking username...
+ no username supplied
+ (specify a username in your configuration file)
+1 problems detected, please check your install!. Command line: hg -y debuginstall
+
+!ENTRY org.eclipse.core.jobs 4 2 2018-08-06 16:08:41.931
+!MESSAGE An internal error occurred during: "Detecting hg user name".
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLine(HgConfigClient.java:23)
+	at com.vectrace.MercurialEclipse.team.MercurialUtilities.getDefaultUserName(MercurialUtilities.java:281)
+	at com.vectrace.MercurialEclipse.preferences.PreferenceInitializer$1.run(PreferenceInitializer.java:143)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-08-06 16:08:43.434
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.sf.feeling.decompiler 4 0 2018-08-06 16:08:46.974
+!MESSAGE 
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.sf.feeling.decompiler.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:73)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler.getUpdateUrl(DecompilerUpdateHandler.java:235)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler.getUpdateVersion(DecompilerUpdateHandler.java:179)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler.updateDecompiler(DecompilerUpdateHandler.java:102)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler.access$0(DecompilerUpdateHandler.java:96)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler$2.run(DecompilerUpdateHandler.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.CoreException: Node not found
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.getNode(DefaultMarketplaceService.java:250)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.getNode(DefaultMarketplaceService.java:258)
+	... 11 more
+Root exception:
+org.eclipse.core.runtime.CoreException: Node not found
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.getNode(DefaultMarketplaceService.java:250)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.getNode(DefaultMarketplaceService.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.sf.feeling.decompiler.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:73)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler.getUpdateUrl(DecompilerUpdateHandler.java:235)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler.getUpdateVersion(DecompilerUpdateHandler.java:179)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler.updateDecompiler(DecompilerUpdateHandler.java:102)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler.access$0(DecompilerUpdateHandler.java:96)
+	at org.sf.feeling.decompiler.update.DecompilerUpdateHandler$2.run(DecompilerUpdateHandler.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
