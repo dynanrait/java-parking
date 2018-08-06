@@ -17,15 +17,15 @@ public class SlotParkingFileTest {
 	
 	@Test
 	public void test() {
-		String words = "aku adalah bradpitt";
-		String[] myStringArray = {"aku","adalah","bradpitt"};
+		String words = "D 01AA              Red        1";
+		String[] myStringArray = {"D","01AA","Red","1"};
 		assertEquals(myStringArray, slotParkingFile.readContentFromFile(words));
 	}
 	
 	@Test
 	public void test1() {
-		String words = "aku,adalah,bradpitt";
-		String[] myStringArray = {"aku","adalah","bradpitt"};
+		String words = "D,01AA,Red,1";
+		String[] myStringArray = {"D","01AA","Red", "1"};
 		assertEquals(myStringArray, slotParkingFile.readContentFromFile(words));
 	}
 

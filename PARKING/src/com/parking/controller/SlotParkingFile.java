@@ -15,9 +15,9 @@ public class SlotParkingFile extends SlotParking {
 	
 	public static final String AVAILABLE = "available";
 	public static final String EMPTY = "";
-	public static final String PATH = "D:\\gojek\\parking-lot-1.3.0\\parking_lot\\file.txt";
-	public static final String PATH_CRETAE_SPACE = "D:\\gojek\\parking-lot-1.3.0\\parking_lot\\file2.txt";
-	public static final String PATH_LEAVE_SPACE = "D:\\gojek\\parking-lot-1.3.0\\parking_lot\\file3.txt";
+	public static final String PATH = "D:\\test\\java-parking\\file.txt";
+	public static final String PATH_CRETAE_SPACE = "D:\\Parking-test\\java-parking\\file2.txt";
+	public static final String PATH_LEAVE_SPACE = "D:\\Parking-test\\java-parking\\file3.txt";
 	
 	public void setSlotParking(ParkingSlot parking){
 		System.out.println("Process Register your slot Parking for your car");
