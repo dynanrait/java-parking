@@ -1,0 +1,3 @@
+H registrationNumber color      slot
+D 01-AA              Red        1
+D 02-AA              Black      2
